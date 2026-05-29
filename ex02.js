@@ -3,3 +3,10 @@
 // Example: arrayDifference([1, 2, 3], [2, 3, 4]) should return [1].
 
 console.log(arrayDifference([1, 2, 3], [2, 3, 4])); // Expected output: [1]
+console.log(arrayDifference([1, 5, 3], [2, 3, 4])); // Expected output: [1,5]
+
+function arrayDifference(arr1, arr2){
+
+  return arr1.filter((num)=> !arr2.includes(num)) ;
+
+}
