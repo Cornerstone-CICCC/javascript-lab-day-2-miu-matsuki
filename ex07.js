@@ -5,3 +5,24 @@
 
 console.log(validateEmail("test@example.com")); // Expected output: true
 console.log(validateEmail("invalid-email.com")); // Expected output: false
+
+
+function validateEmail(address){
+//①confirm to "@" 
+//②confirm to "." after @
+return address.includes("@")&& address.split("@")[1].includes(".");
+}
+
+
+// function validateEmail(address){
+// //①confirm to "@" 
+// //②confirm to "."
+// const judge = address.includes("@")&& address.split("@")[1].includes(".") ?  true : false;
+// return judge;
+// }
+
+// if(address.includes("@")&& address.split("@")[1].includes(".")){
+//   return true;
+// }
+//   return false;
+// }
